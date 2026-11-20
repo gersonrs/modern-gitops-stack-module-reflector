@@ -5,4 +5,4 @@ version: "0"
 dependencies:
   - name: reflector
     repository: https://emberstack.github.io/helm-charts/
-    version: "*.*.*"
+    version: "9.1.45"
