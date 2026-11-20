@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/gersonrs/modern-gitops-stack-module-reflector/compare/v1.2.0...v2.0.0) (2026-11-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* provider major bumps and a stricter Terraform baseline; consumers must run `terraform init -upgrade`.
+
+### 🚀 New Features
+
+* upgrade charts, providers and Terraform baseline ([#6](https://github.com/gersonrs/modern-gitops-stack-module-reflector/issues/6)) ([e32686a](https://github.com/gersonrs/modern-gitops-stack-module-reflector/commit/e32686aa054e33d114aedd9d257c81fedb60ba94))
+
+
+### 📦 CI Improvements
+
+* run release-please with GITHUB_TOKEN ([#7](https://github.com/gersonrs/modern-gitops-stack-module-reflector/issues/7)) ([4281ab7](https://github.com/gersonrs/modern-gitops-stack-module-reflector/commit/4281ab70b6cfaed6aec617710fbbfe2836ee4a7e))
+
 ## [1.2.0](https://github.com/GersonRS/modern-gitops-stack-module-reflector/compare/v1.1.0...v1.2.0) (2025-10-20)
 
 
