@@ -1,4 +1,48 @@
 = modern-gitops-stack-module-reflector
+// Document attributes to replace along the document
+:reflector-chart-version: 9.1.45
+:original-repo-url: https://github.com/emberstack/docker-k8s-reflector
+
+A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy Reflector, which replicates Secrets and ConfigMaps across namespaces.
+
+The reflector chart used by this module is shipped in this repository as well, in order to avoid any unwanted behaviors caused by unsupported versions.
+
+[cols="1,1,1",options="autowidth,header"]
+|===
+|Current Chart Version |Original Repository |Default Values
+|*9.1.45* |https://github.com/emberstack/docker-k8s-reflector/tree/main/charts/reflector[reflector] |https://artifacthub.io/packages/helm/reflector/reflector/9.1.45?modal=values[`values.yaml`]
+|===
+
+== Usage
+
+This module can be declared by adding the following block to your Terraform configuration:
+
+[source,terraform]
+----
+module "reflector" {
+  source = "git::https://github.com/GersonRS/modern-gitops-stack-module-reflector.git?ref=<RELEASE>"
+
+  cluster_name   = local.cluster_name
+  base_domain    = local.base_domain
+  subdomain      = local.subdomain
+  cluster_issuer = local.cluster_issuer
+  app_autosync   = local.app_autosync
+
+  dependency_ids = {
+    argocd = module.argocd.id
+  }
+}
+----
+
+The application is deployed to the `reflector` namespace.
+
+== Technical Reference
+
+=== Dependencies
+
+==== `module.argocd.id`
+
+Argo CD applies the application.
 
 // BEGIN_TF_DOCS
 === Requirements
