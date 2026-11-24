@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/gersonrs/modern-gitops-stack-module-reflector/compare/v2.0.0...v2.0.1) (2026-11-24)
+
+
+### 📚 Documentation
+
+* add usage and dependencies to the module documentation ([#9](https://github.com/gersonrs/modern-gitops-stack-module-reflector/issues/9)) ([6725ce3](https://github.com/gersonrs/modern-gitops-stack-module-reflector/commit/6725ce3ffdfdd21c7cfce8acc50005b819dc15b2))
+
 ## [2.0.0](https://github.com/gersonrs/modern-gitops-stack-module-reflector/compare/v1.2.0...v2.0.0) (2026-11-20)
 
 
